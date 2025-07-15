@@ -13,6 +13,7 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { Slider } from "./ui/slider";
 import CarListingGrid from "./CarListingGrid";
+import CarCard from "./CarCard";
 
 const Home = () => {
   return (
@@ -215,6 +216,86 @@ const Home = () => {
                 </div>
               </TabsContent>
             </Tabs>
+          </div>
+        </div>
+      </section>
+
+      {/* Best Selling Fiat Cars Section */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gradient mb-4">
+              السيارات الأكثر مبيعاً في الجزائر - فيات
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              اكتشف مجموعة فيات المتميزة والأكثر طلباً في السوق الجزائري
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <CarCard
+              id="fiat-1"
+              make="فيات"
+              model="بونتو"
+              year={2024}
+              price={2800000}
+              monthlyPayment={38000}
+              image="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80"
+            />
+            <CarCard
+              id="fiat-2"
+              make="فيات"
+              model="تيبو"
+              year={2024}
+              price={3200000}
+              monthlyPayment={44000}
+              image="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80"
+            />
+            <CarCard
+              id="fiat-3"
+              make="فيات"
+              model="500"
+              year={2024}
+              price={2500000}
+              monthlyPayment={35000}
+              image="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80"
+            />
+            <CarCard
+              id="fiat-4"
+              make="فيات"
+              model="دوبلو"
+              year={2024}
+              price={3500000}
+              monthlyPayment={48000}
+              image="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80"
+            />
+            <CarCard
+              id="fiat-5"
+              make="فيات"
+              model="باندا"
+              year={2024}
+              price={2300000}
+              monthlyPayment={32000}
+              image="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80"
+            />
+            <CarCard
+              id="fiat-6"
+              make="فيات"
+              model="كرومة"
+              year={2024}
+              price={4200000}
+              monthlyPayment={58000}
+              image="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80"
+            />
+          </div>
+
+          <div className="text-center">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3"
+            >
+              عرض جميع سيارات فيات
+            </Button>
           </div>
         </div>
       </section>

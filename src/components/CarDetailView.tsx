@@ -278,9 +278,6 @@ const CarDetailView: React.FC<CarDetailViewProps> = ({
               <Lock className="mr-2 h-4 w-4" />
               عرض التفاصيل الكاملة
             </Button>
-            <Button variant="outline" className="w-full">
-              تواصل مع البائع
-            </Button>
           </div>
         </div>
       </div>

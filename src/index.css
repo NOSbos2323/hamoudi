@@ -6,13 +6,13 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 248 250 252;
     --foreground: 222.2 84% 4.9%;
 
-    --card: 0 0% 100%;
+    --card: 255 255 255;
     --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 0 0% 100%;
+    --popover: 255 255 255;
     --popover-foreground: 222.2 84% 4.9%;
 
     --primary: 220 13% 18%;
@@ -24,7 +24,7 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 43 96% 56%;
+    --accent: 59 130% 246;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -83,6 +83,7 @@
       "kern" 1,
       "liga" 1,
       "calt" 1;
+    min-height: 100vh;
   }
 
   h1,
@@ -98,19 +99,19 @@
 
 @layer components {
   .gradient-bg {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #06b6d4 100%);
   }
 
   .luxury-card {
-    @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-xl;
+    @apply bg-white/90 backdrop-blur-lg border border-white/30 shadow-2xl;
   }
 
   .glass-effect {
-    @apply bg-white/10 backdrop-blur-md border border-white/20;
+    @apply bg-white/20 backdrop-blur-xl border border-white/30;
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #06b6d4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
